@@ -2,7 +2,6 @@
 package com.portfolioGT.portfolioGT.service;
 
 import com.portfolioGT.portfolioGT.model.Persona;
-import com.portfolioGT.portfolioGT.repository.IPersonaRepository;
 import java.io.Serial;
 import java.util.List;
 import java.util.Optional;
@@ -27,12 +26,12 @@ public class PersonaService implements IpersonaService{
 
     @Override
     public void BorrarPersona(long id) {
-       repoPerso.deleteById(id);
+       repoPerso.deleteById((int)id);
     }
 
     @Override
     public Persona BuscarPersona(long id) {
-      return repoPerso.findById(id).orElse(null);
+      return repoPerso.findById((int)id).orElse(null);
     }
    
 }

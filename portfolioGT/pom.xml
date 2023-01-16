@@ -74,8 +74,32 @@
             <artifactId>jjwt</artifactId>
             <version>0.9.1</version>
         </dependency>
-
-
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-config</artifactId>
+            <version>6.0.1</version>
+            <type>jar</type>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-autoconfigure</artifactId>
+            <version>3.0.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+            <version>6.0.3</version>
+        </dependency>
+        <dependency>
+            <groupId>cn.hippo4j</groupId>
+            <artifactId>hippo4j-spring-boot-starter-adapter</artifactId>
+            <version>1.4.1</version>
+            <type>pom</type>
+        </dependency>
     </dependencies>
 
     <build>

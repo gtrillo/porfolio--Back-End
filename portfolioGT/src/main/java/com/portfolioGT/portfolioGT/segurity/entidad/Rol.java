@@ -1,28 +1,49 @@
 
 package com.portfolioGT.portfolioGT.segurity.entidad;
 
+import com.portfolioGT.portfolioGT.segurity.enumerados.RolNombre;
 import jakarta.persistence.Entity;
+import jakarta.persistence.EnumType;
+import jakarta.persistence.Enumerated;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import javax.validation.constraints.NotNull;
-import lombok.Getter;
-import lombok.Setter;
+
 
 @Entity
-@Getter @Setter
+
 public class Rol {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-     private int id;
+     public int id;
+    
+    
     @NotNull
-    private String nombre_rol;
+    @Enumerated(EnumType.STRING)
+    public RolNombre nombre_rol;
 
-    public Rol(String nombre_nombre) {
-        this.nombre_rol = nombre_nombre;
+    public Rol(RolNombre nombre_rol) {
+        this.nombre_rol = nombre_rol;
     }
 
     public Rol() {
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public RolNombre getNombre_rol() {
+            return nombre_rol;
+        }
+
+    public void setNombre_rol(RolNombre nombre_rol) {
+        this.nombre_rol = nombre_rol;
     }
     
     
