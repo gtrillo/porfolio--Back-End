@@ -29,7 +29,7 @@ public class JwtFilter extends OncePerRequestFilter{
         try
         {
             String token = getToken(request);
-            if(token != null && provider.ValidarToke(token))
+            if(token != null && provider.ValidarToken(token))
             {
                 String nombreUsuario = provider.getNombreUsuarioFromToken(token);
                 UserDetails userDetails = this.userDetailsImple.loadUserByUsername(nombreUsuario);

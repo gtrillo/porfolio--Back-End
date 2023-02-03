@@ -3,7 +3,7 @@ package com.portfolioGT.portfolioGT.segurity.service;
 
 import com.portfolioGT.portfolioGT.segurity.entidad.Rol;
 import com.portfolioGT.portfolioGT.segurity.enumerados.RolNombre;
-import com.portfolioGT.portfolioGT.segurity.repository.IRolRepository;
+import com.portfolio.backend.service.repository.IRolRepository;
 import jakarta.transaction.Transactional;
 import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;

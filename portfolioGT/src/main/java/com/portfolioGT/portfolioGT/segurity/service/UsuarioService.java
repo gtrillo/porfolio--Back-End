@@ -2,7 +2,7 @@
 package com.portfolioGT.portfolioGT.segurity.service;
 
 import com.portfolioGT.portfolioGT.segurity.entidad.Usuario;
-import com.portfolioGT.portfolioGT.segurity.repository.IUsuarioRepository;
+import com.portfolio.backend.service.repository.IUsuarioRepository;
 import jakarta.transaction.Transactional;
 import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
